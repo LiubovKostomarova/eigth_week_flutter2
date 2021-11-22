@@ -136,7 +136,7 @@ class BeachDetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Portugal Beaches")),
+      appBar: AppBar(title: const Text('Beach')),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
