@@ -131,12 +131,13 @@ class BeachDetailsScreen extends StatelessWidget {
 
   BeachDetailsScreen({
     @required this.beach,
+    
   });
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Beach')),
+      appBar: AppBar(title: const Text('Beach :heart:')),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
@@ -144,9 +145,8 @@ class BeachDetailsScreen extends StatelessWidget {
           children: [
             if (beach != null) ...[
               Text(beach.name, style: Theme.of(context).textTheme.headline6),
-              Text(beach.picture),
-              /*Text(beach.picture,
-                  style: Theme.of(context).textTheme.subtitle1),*/
+              Image.asset(beach.picture),
+              
             ],
           ],
         ),
